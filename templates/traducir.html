@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block main %}
+    <h1>TRANSLATE .SRT FILES</h1>
+    <p>Translate your .srt files to any language you want!</p>
+    <form method="POST" action="/traducir" enctype="multipart/form-data">
+        <input type="file" name="archivo">
+        <label for="idioma">Idioma a traducir:</label>
+        <select name="idioma" id="idioma">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="de">Alemán</option>
+        </select>
+        <input type="submit" value="Traducir">
+    </form>
+
+{% endblock %}

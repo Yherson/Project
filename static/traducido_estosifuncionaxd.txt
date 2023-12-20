@@ -8,69 +8,69 @@
 
 3
 00:01:14,380 --> 00:01:15,940
-Esto es CS50.
+Ceci est CS50.
 
 4
 00:01:15,940 --> 00:01:17,260
-Y esta es la semana cuatro.
+Et c'est la semaine quatrième.
 
 5
 00:01:17,260 --> 00:01:19,872
-Y si ya piensas hace unas semanas, en la semana cero,
+Et si vous repensez il y a quelques semaines déjà, dans la semaine zéro,
 
 6
 00:01:19,872 --> 00:01:21,580
-Comenzamos a hablar sobre cuáles son las imágenes,
+Nous avons commencé à parler de ce que sont les images,
 
 7
 00:01:21,580 --> 00:01:25,690
-Y hablamos sobre la representación de imágenes como esta cuadrícula de píxeles.
+Et nous avons parlé de la représentation des images comme cette grille de pixels.
 
 8
 00:01:25,690 --> 00:01:28,923
-Y cada píxel tiene un patrón de bits que define su color.
+Et chaque pixel a un motif de bits qui définit sa couleur.
 
 9
 00:01:28,923 --> 00:01:31,840
-Bueno, resulta que hoy echaremos un vistazo más profundo debajo del capó
+Eh bien, il s'avère qu'aujourd'hui, nous allons jeter un look plus profond sous le capot
 
 10
 00:01:31,840 --> 00:01:34,360
-a cómo cosas como imágenes, y mucho más,
+dans la façon dont les choses aiment les images, et bien plus encore,
 
 11
 00:01:34,360 --> 00:01:37,240
-en realidad se implementa usando solo estos ceros y otros,
+est réellement implémenté en utilisant uniquement ces zéros et ceux,
 
 12
 00:01:37,240 --> 00:01:40,300
-y cómo ahora como programador, en realidad puedes
+Et comment maintenant en tant que programmeur, vous pouvez en fait
 
 13
 00:01:40,300 --> 00:01:43,750
-arnés que, para bien o para mal, para comprender mejor y mejor
+exploiter que, pour le meilleur ou pour le pire, pour mieux comprendre et mieux
 
 14
 00:01:43,750 --> 00:01:46,090
-Manipule lo que está sucediendo dentro de la memoria de una computadora
+manipuler ce qui se passe à l'intérieur de la mémoire d'un ordinateur
 
 15
 00:01:46,090 --> 00:01:47,590
-Usando un lenguaje como C.
+Utilisation d'une langue comme C.
 
 16
 00:01:47,590 --> 00:01:50,200
-De hecho, incluso este tazón de bolas de estrés que seguimos sucediendo
+En fait, même ce bol de boules de stress que nous continuons à se produire
 
 17
 00:01:50,200 --> 00:01:51,567
-es solo una fotografía, por supuesto.
+est juste une photographie bien sûr.
 
 18
 00:01:51,567 --> 00:01:54,400
-Pero si piensa en la semana cero, si mejora, mejora,
+Mais si vous repensez à la semaine zéro, si vous améliorez, améliorez, améliorez,
 
 19
 00:01:54,400 --> 00:01:56,860
-Mejorar esta imagen, como lo hacen en las películas,
+Améliorez cette image, comme ils le font dans les films,
 

@@ -43,6 +43,8 @@ def traducir():
         eliminar_db(ruta_db)
         
         return response
+    
+    return render_template('traducir.html')
 
 def eliminar_db(ruta_db):
     for _ in range(10):  # Intenta eliminar la base de datos hasta 10 veces
