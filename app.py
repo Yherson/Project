@@ -8,6 +8,9 @@ import os
 import json
 import re
 import sqlite3
+import gc
+import time
+
 
 
 app = Flask(__name__)
@@ -18,6 +21,7 @@ def index():
 
 @app.route('/traducir', methods=["GET", "POST"])
 def traducir():
+    ruta_db = 'subtitulos.db'
     if request.method == 'POST':
         archivo = request.files['archivo']
         nombre_archivo = secure_filename(archivo.filename)
@@ -27,19 +31,28 @@ def traducir():
         idioma_destino = request.form['idioma']
         ruta_archivo_destino = os.path.join('static', 'traducido_' + nombre_archivo)
 
-        ruta_db = 'subtitulos.db'
-
         # Comprueba la extensión del archivo para determinar qué función de traducción usar
         extension = os.path.splitext(nombre_archivo)[1]
         
         convertir_srt_like_txt_a_db(ruta_archivo_origen, ruta_db)
         traducir_texto(ruta_db, idioma_destino)
         generar_archivo_traducido(ruta_db, ruta_archivo_destino)
+        
+        response = send_from_directory('static', 'traducido_' + nombre_archivo, as_attachment=True)
+        
+        gc.collect()  # Llama al recolector de basura para cerrar todas las conexiones a la base de datos
+        eliminar_db(ruta_db)
+        
+        return response
 
-        return send_from_directory('static', 'traducido_' + nombre_archivo, as_attachment=True)
-    
-
-    
+def eliminar_db(ruta_db):
+    for _ in range(10):  # Intenta eliminar la base de datos hasta 10 veces
+        try:
+            if os.path.exists(ruta_db):
+                os.remove(ruta_db)
+            break  # Si se pudo eliminar la base de datos, sale del bucle
+        except PermissionError:
+            time.sleep(1)  # Si no se pudo eliminar la base de datos, espera 1 segundo y luego reintenta
 
 
 # Crear una base de datos SQLite a partir de un archivo de subtítulos SRT o similar
@@ -90,6 +103,7 @@ def traducir_texto(ruta_db, idioma_destino):
 
     conn.close()
 
+
 # Generar un archivo de subtítulos SRT o similar a partir de la base de datos SQLite
 def generar_archivo_traducido(ruta_db, ruta_archivo_destino):
     conn = sqlite3.connect(ruta_db)
@@ -101,5 +115,4 @@ def generar_archivo_traducido(ruta_db, ruta_archivo_destino):
             archivo_destino.write(f'{i}\n{inicio} --> {fin}\n{texto_traducido}\n\n')
 
     conn.close()
-    
     
