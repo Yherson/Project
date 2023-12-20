@@ -1,0 +1,83 @@
+0
+00:00:00,000 --> 00:00:01,996
+
+
+1
+00:00:01,996 --> 00:00:07,485
+[MUSIC PLAYING]
+
+2
+00:00:07,485 --> 00:01:13,297
+
+
+3
+00:01:13,297 --> 00:01:14,380
+DAVID J. MALAN: All right.
+
+4
+00:01:14,380 --> 00:01:15,940
+This is CS50.
+
+5
+00:01:15,940 --> 00:01:17,260
+And this is week four.
+
+6
+00:01:17,260 --> 00:01:19,872
+And if you think back a few weeks ago already, in week zero,
+
+7
+00:01:19,872 --> 00:01:21,580
+we started talking about what images are,
+
+8
+00:01:21,580 --> 00:01:25,690
+and we talked about representation of images as this grid of pixels.
+
+9
+00:01:25,690 --> 00:01:28,923
+And each pixel has some pattern of bits that defines its color.
+
+10
+00:01:28,923 --> 00:01:31,840
+Well, it turns out today, we'll take a deeper look underneath the hood
+
+11
+00:01:31,840 --> 00:01:34,360
+at how things like images, and so much more,
+
+12
+00:01:34,360 --> 00:01:37,240
+is actually implemented using just these zeros and ones,
+
+13
+00:01:37,240 --> 00:01:40,300
+and how now as a programmer, you can actually
+
+14
+00:01:40,300 --> 00:01:43,750
+harness that, for better or for worse, to better understand and better
+
+15
+00:01:43,750 --> 00:01:46,090
+manipulate what's going on inside of a computer's memory
+
+16
+00:01:46,090 --> 00:01:47,590
+using a language like C.
+
+17
+00:01:47,590 --> 00:01:50,200
+In fact, even this bowl of stress balls that we keep happening
+
+18
+00:01:50,200 --> 00:01:51,567
+is just a photograph of course.
+
+19
+00:01:51,567 --> 00:01:54,400
+But if you think back to week zero, if you sort of enhance, enhance,
+
+20
+00:01:54,400 --> 00:01:56,860
+enhance this image, like they do in the movies,

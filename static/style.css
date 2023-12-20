@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 100px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#resultado {
+    margin-top: 20px;
+}
+

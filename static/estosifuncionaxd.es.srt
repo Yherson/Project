@@ -1,0 +1,83 @@
+0
+00:00:00,000 --> 00:00:01,996
+
+
+1
+00:00:01,996 --> 00:00:07,485
+[REPRODUCIENDO MÚSICA]
+
+2
+00:00:07,485 --> 00:01:13,297
+
+
+3
+00:01:13,297 --> 00:01:14,380
+DAVID J. MALAN: Muy bien.
+
+4
+00:01:14,380 --> 00:01:15,940
+Este es el CS50.
+
+5
+00:01:15,940 --> 00:01:17,260
+Y esta es la cuarta semana.
+
+6
+00:01:17,260 --> 00:01:19,872
+Y si recuerdas hace unas semanas, en la semana cero,
+
+7
+00:01:19,872 --> 00:01:21,580
+empezamos a hablar sobre qué son las imágenes,
+
+8
+00:01:21,580 --> 00:01:25,690
+y hablamos de la representación de imágenes como esta cuadrícula de píxeles.
+
+9
+00:01:25,690 --> 00:01:28,923
+Y cada píxel tiene algún patrón de bits que define su color.
+
+10
+00:01:28,923 --> 00:01:31,840
+Bueno, resulta que hoy echaremos un vistazo más profundo debajo del capó.
+
+11
+00:01:31,840 --> 00:01:34,360
+cómo cosas como imágenes y mucho más,
+
+12
+00:01:34,360 --> 00:01:37,240
+en realidad se implementa usando solo estos ceros y unos,
+
+13
+00:01:37,240 --> 00:01:40,300
+y cómo ahora, como programador, puedes realmente
+
+14
+00:01:40,300 --> 00:01:43,750
+aprovechar eso, para bien o para mal, para comprender mejor y mejorar
+
+15
+00:01:43,750 --> 00:01:46,090
+manipular lo que sucede dentro de la memoria de una computadora
+
+16
+00:01:46,090 --> 00:01:47,590
+usando un lenguaje como C.
+
+17
+00:01:47,590 --> 00:01:50,200
+De hecho, incluso este plato de bolas de estrés que seguimos sucediendo
+
+18
+00:01:50,200 --> 00:01:51,567
+Es sólo una fotografía, por supuesto.
+
+19
+00:01:51,567 --> 00:01:54,400
+Pero si piensas en la semana cero, si mejoras, mejoras,
+
+20
+00:01:54,400 --> 00:01:56,860
+mejorar esta imagen, como lo hacen en las películas,
