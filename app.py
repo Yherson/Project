@@ -12,7 +12,6 @@ import gc
 import time
 
 
-
 app = Flask(__name__)
 
 @app.route('/')

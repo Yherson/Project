@@ -30,7 +30,13 @@
     <h1>Traductor de Texto</h1>
     <form method="POST" action="/traducir" enctype="multipart/form-data">
         <input type="file" name="archivo">
-        <input type="text" name="idioma" placeholder="Ingresa el código del idioma destino">
+        <label for="idioma">Traducir a:</label>
+        <select name="idioma" id="idioma">
+            <option value="es">Español</option>
+            <option value="en">Inglés</option>
+            <option value="fr">Francés</option>
+            <option value="de">Alemán</option>
+        </select>
         <input type="submit" value="Traducir">
     </form>
     {% if resultado %}
