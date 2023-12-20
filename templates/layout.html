@@ -3,22 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <title>Traductor</title>
+    <title>TranslateSRT</title>
 </head>
 <body>
-
-    <h1>Traductor de Texto</h1>
-    <form method="post" action="{{ url_for('traducir') }}">
-        <textarea name="texto" placeholder="Introduce el texto a traducir"></textarea>
-        <button type="submit">Traducir</button>
-    </form>
-    {% if resultado %}
-        <div id="resultado">
-            <p>Resultado:</p>
-            <p>{{ resultado }}</p>
-        </div>
-    {% endif %}
-
+    <h1>TranslateSRT</h1>
 </body>
 </html>
