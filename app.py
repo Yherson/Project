@@ -18,6 +18,18 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/traducirtxt', methods=["GET","POST"])
+def traducirtxt():
+    if request.method == 'GET':
+        return render_template('traducirtxt.html')
+    else:
+        translator = Translator()
+        texto = request.form.get('text')
+        idioma = request.form.get('idioma')
+        traduccion = translator.translate(texto, dest=idioma)
+        return render_template('traducirtxt.html', traduccion=traduccion.text)
+
+
 @app.route('/traducir', methods=["GET", "POST"])
 def traducir():
     ruta_db = 'subtitulos.db'
