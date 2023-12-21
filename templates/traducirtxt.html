@@ -1,13 +1,12 @@
 {% extends "layout.html" %}
 
 {% block main %}
-    <h1 class="title-from-page">Traductor</h1>
-    <p class="p-from-page">Traduce texto de manera facil y rápida</p>
-    <form method="POST" action="/traducirtxt" enctype="multipart/form-data">
-        <textarea class="textarea-from-page" name="text" rows="10" cols="50" placeholder="Ingresa texto a traducir"></textarea>
-        <label class="label-from-page" for="idioma">Traducir a:</label>
-        <select class="select-from-page" name="idioma" id="idioma">
-            
+    <h1 class="title-from-traducirtxt-page">Traductor</h1>
+    <p class="p-from-traducirtxt-page">Traduce texto de manera facil y rápida</p>
+    <form class="form-from-traducirtxt-page" method="POST" action="/traducirtxt" enctype="multipart/form-data">
+        <textarea class="textarea-from-traducirtxt-page" name="text" rows="10" cols="50" placeholder="Ingresa texto a traducir"></textarea>
+        <label class="label-from-traducirtxt-page" for="idioma">Traducir a:</label>
+        <select class="select-from-traducirtxt-page" name="idioma" id="idioma">  
             <option value="ar">Árabe</option>
             <option value="bn">Bengalí</option>
             <option value="bg">Búlgaro</option>
@@ -44,13 +43,12 @@
             <option value="ur">Urdu</option>
             <option value="vi">Vietnamita</option>
             <option value="zh-tw">Chino Mandarín</option>
-
         </select>
-        <input class="input-from-page" type="submit" value="Traducir">
+        <input class="input-from-traducirtxt-page" type="submit" value="Traducir">
     </form>
 
     {% if traduccion %}
-        <h2>Texto traducido:</h2>
-        <p>{{ traduccion }}</p>
+        <h2 class="h2-from-traducirtxt-page">Texto traducido:</h2>
+        <p class="p-traducido-from-traducirtxt-page">{{ traduccion }}</p>
     {% endif %}
 {% endblock %}

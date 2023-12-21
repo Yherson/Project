@@ -22,65 +22,185 @@ button {
     margin-top: 20px;
 }
 
+.p-from-page {
+    color: #666;
+    font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+}
 
 
+
+/* Path: static/style.css from index.html */
+.header {
+    width: 100%;
+    height: 600px;
+    background: #46a5ed; /* Fallback para navegadores antiguos */
+    background: -webkit-linear-gradient(to right, hsla(210, 95%, 50%, 0.459), hsla(197, 45%, 52%, 0.664));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(210, 95%, 50%, 0.459), hsla(197, 45%, 52%, 0.664));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+.header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 
 /* Path: static/style.css from traducirtxt.html */
 
-.title-from-page {
-    color: #333;
-    font-size: 35px;
-    font-weight: bold;
+.form-from-traducirtxt-page {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.p-from-page {
+.textarea-from-traducirtxt-page {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: auto;
+    box-sizing: border-box;
+}
+
+/*Traducion de texto from traducirtxt.html*/
+.h2-from-traducirtxt-page {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+.p-traducido-from-traducirtxt-page {
+    margin-top: 10px;
     color: #666;
     font-size: 18px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
 }
 
-.textarea-from-page {
-    width: 80%;
+
+
+/* Path: static/style.css from traducir.html */
+.form-from-traducir-page {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.label-from-page {
-    color: #333;
-    font-size: 18px;
+label {
     display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
-.select-from-page {
-    width: 10%;
-    margin-left: auto;
-    margin-right: auto;
+select {
+    width: 100%;
     padding: 8px;
     margin-bottom: 10px;
-    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.input-from-page[type="submit"] {
-    background-color: #4caf50;
+input[type="submit"] {
+    background-color: #4a90e2; /* Azul degrado */
     color: #fff;
-    padding: 10px;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    width: 5%;
-    margin-left: auto;
-    margin-right: auto;
+    transition: background-color 0.3s ease; /* Efecto suave de transición */
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #2e6da4; /* Azul más oscuro al pasar el ratón */
 }
 
-h2 {
-    margin-top: 20px;
-    color: #333;
-}
 
+
+
+
+
+/* Footer from layout.html  */
+
+.footer-basic {
+    margin-top: 10px;
+    color:#4b4c4d;
+}     
+
+.footer-basic .social {
+    text-align:center;
+    padding-bottom:10px;
+}
+.footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+.footer-basic .social > a:hover {
+    opacity:0.9;
+}
+.footer-basic .copyright {
+    margin-top: 10px;
+    text-align:center;
+    font-size:15px;
+    color:#aaa;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}

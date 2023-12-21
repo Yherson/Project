@@ -1,16 +1,48 @@
 {% extends "layout.html" %}
 
 {% block main %}
-    <h1>TRANSLATE .SRT FILES</h1>
-    <p>Translate your .srt files to any language you want!</p>
-    <form method="POST" action="/traducir" enctype="multipart/form-data">
+    <h1>TRADUCIR ARCHIVOS .SRT</h1>
+    <p>Traduce archivos .srt en el idioma que quieras!</p>
+    <form class="form-from-traducir-page" method="POST" action="/traducir" enctype="multipart/form-data">
         <input type="file" name="archivo">
         <label for="idioma">Idioma a traducir:</label>
         <select name="idioma" id="idioma">
-            <option value="es">Español</option>
-            <option value="en">Inglés</option>
-            <option value="fr">Francés</option>
+            <option value="ar">Árabe</option>
+            <option value="bn">Bengalí</option>
+            <option value="bg">Búlgaro</option>
+            <option value="cs">Checo</option>
+            <option value="da">Danés</option>
             <option value="de">Alemán</option>
+            <option value="el">Griego</option>
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fa">Persa</option>
+            <option value="fi">Finlandés</option>
+            <option value="fr">Francés</option>
+            <option value="he">Hebreo</option>
+            <option value="hi">Hindi</option>
+            <option value="hu">Húngaro</option>
+            <option value="id">Indonesio</option>
+            <option value="it">Italiano</option>
+            <option value="ja">Japonés</option>
+            <option value="ko">Coreano</option>
+            <option value="lt">Lituano</option>
+            <option value="nl">Holandés</option>
+            <option value="no">Noruego</option>
+            <option value="pl">Polaco</option>
+            <option value="pt">Portugués</option>
+            <option value="ro">Rumano</option>
+            <option value="ru">Ruso</option>
+            <option value="sk">Eslovaco</option>
+            <option value="sl">Esloveno</option>
+            <option value="sv">Sueco</option>
+            <option value="sw">Suajili</option>
+            <option value="ta">Tamil</option>
+            <option value="th">Tailandés</option>
+            <option value="tr">Turco</option>
+            <option value="ur">Urdu</option>
+            <option value="vi">Vietnamita</option>
+            <option value="zh-tw">Chino Mandarín</option>
         </select>
         <input type="submit" value="Traducir">
     </form>
