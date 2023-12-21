@@ -67,7 +67,6 @@ def eliminar_db(ruta_db):
         except PermissionError:
             time.sleep(1)  # Si no se pudo eliminar la base de datos, espera 1 segundo y luego reintenta
 
-
 # Crear una base de datos SQLite a partir de un archivo de subtítulos SRT o similar
 def convertir_srt_like_txt_a_db(ruta_archivo_origen, ruta_db):
     conn = sqlite3.connect(ruta_db)
@@ -93,7 +92,6 @@ def convertir_srt_like_txt_a_db(ruta_archivo_origen, ruta_db):
     conn.commit()
     conn.close()
 
-
 # Traducir el texto de la base de datos SQLite
 def traducir_texto(ruta_db, idioma_destino):
     translator = Translator()
@@ -115,7 +113,6 @@ def traducir_texto(ruta_db, idioma_destino):
         print("No hay subtítulos para traducir.")
 
     conn.close()
-
 
 # Generar un archivo de subtítulos SRT o similar a partir de la base de datos SQLite
 def generar_archivo_traducido(ruta_db, ruta_archivo_destino):
