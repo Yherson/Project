@@ -20,6 +20,7 @@ This web application consists of generating .srt (SubRip Subtitle) files, the ob
 3. Wait for the translation to complete (this may take some time due to processing).
 4. Download the .srt file translated and ready to be incorporated into your videos.
 
+### Download and try
 1. Clone or download this repository:
      ```tap
      https://github.com/Yherson/TranslateSRT-CS50-Final-Proyect.git
