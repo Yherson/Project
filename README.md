@@ -22,7 +22,7 @@ Esta aplicación web conciste en tracucir archivos .srt (SubRip Subtitle), el ob
 
 1. Clona o descarga este repositorio:
    ```bash
-   git clone https://github.com/tuusuario/TranslateSRT.git
+   https://github.com/Yherson/TranslateSRT-CS50-Final-Proyect.git
 2. Abre el proyecto con Visual Studio Code u otro IDE de tu elección.
 
 ### Dependencia
