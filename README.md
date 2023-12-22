@@ -26,14 +26,14 @@ Esta aplicación web conciste en tracucir archivos .srt (SubRip Subtitle), el ob
 2. Abre el proyecto con Visual Studio Code u otro IDE de tu elección.
 
 ### Dependencia
-Python 3.0.0 o posterior
-SQLite3
-Googletrans (biblioteca de traducción)
-Flask
-Werkzeug
-Time
-Re
-Gc
+- Python 3.0.0 o posterior
+- SQLite3
+- Googletrans (biblioteca de traducción)
+- Flask
+- Werkzeug
+- Time
+- Re
+- Gc
 
 ### Autor
 - Yherson Valdivia Altez
